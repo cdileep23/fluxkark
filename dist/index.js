@@ -154,7 +154,7 @@ app.post("/identify", async (req, res) => {
         }
         const response = {
             contact: {
-                primaryContatctId: primaryContactId,
+                primaryContatstId: primaryContactId,
                 emails,
                 phoneNumbers,
                 secondaryContactIds,

@@ -25,7 +25,7 @@ interface IdentifyRequest {
 
 interface IdentifyResponse {
   contact: {
-    primaryContatctId: number;
+    primaryContatstId: number;
     emails: string[];
     phoneNumbers: string[];
     secondaryContactIds: number[];
@@ -232,7 +232,7 @@ const existingContacts = await prisma.contact.findMany({
 
     const response: IdentifyResponse = {
       contact: {
-        primaryContatctId: primaryContactId,
+        primaryContatstId: primaryContactId,
         emails,
         phoneNumbers,
         secondaryContactIds,
